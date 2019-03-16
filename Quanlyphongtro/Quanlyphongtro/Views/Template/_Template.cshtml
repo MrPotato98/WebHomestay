@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
-    <title>Unique Multipurpose Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+    <title>Homestay Managament</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -33,40 +33,43 @@
     <!-- //Web-Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-
 </head>
+
 <body>
-    <div>
-        @RenderBody()
-    </div>
+
     <!-- header -->
     <header>
+        <div class="logo Index-clr ml-sm-4 ml-2 mt-3 fixed-top text-left">
+            <a href="/Motel/Index"><span class="fas fa-hand-point-up"></span></a>
 
+            <!-- menu -->
+            <ul id="menu">
+                <li>
+                    <input id="check02" type="checkbox" name="menu" />
+                    <label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                    <ul class="submenu">
+                        <li><a href="/Motel/Index" class="active">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">The Team</a></li>
+                        <li><a href="/Motel/Contact">Contact Us</a></li>
+                        
+                        <!-- login & create account -->
 
-        <!-- menu -->
-        <ul id="menu">
-            <li>
-                <input id="check02" type="checkbox" name="menu" />
-                <label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
-                <ul class="submenu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">The Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="/Motel/login">Login</a></li>
 
-                    <!-- login & create account -->
-                    <li><a href="login.html">Login</a></li>
-
-                    @*<li><a href="blog.html">Blog</a></li>*@
-                    @*<li><a href="gallery.html">Gallery</a></li>*@
-                </ul>
-            </li>
-        </ul>
+                        @*<li><a href="blog.html">Blog</a></li>*@
+                        @*<li><a href="gallery.html">Gallery</a></li>*@
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <!-- //menu -->
+
     </header>
+
     <!-- //header -->
 
-    
 </body>
+@RenderBody()
 </html>

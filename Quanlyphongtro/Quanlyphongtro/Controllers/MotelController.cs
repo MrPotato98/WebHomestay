@@ -23,9 +23,13 @@ namespace Quanlyphongtro.Controllers
         {
             return View();
         }
-        public ActionResult Test()
+        public ActionResult Contact()
         {
             return View();
+        }
+        public ActionResult Test()
+        {
+            return PartialView();
         }
     }
 }
